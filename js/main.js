@@ -56,8 +56,6 @@ function video() {
     $('.botao.play').hide();
     $('.botao.inf').hide();
     $('#control-video').show();
-
-
     vid.play();
     vid.volume = 0.5;
 }
