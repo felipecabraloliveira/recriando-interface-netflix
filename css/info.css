@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    background-color: #141414;
+}
+
+main {
+    width: 100%;
+}
+
+main .container {
+    font-family: 'Roboto', 'Arial', serif;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.poster {
+    min-width: 300px;
+    display: flex;
+    margin-right: 10px;
+}
+
+.poster img {
+    width: 100%;
+    padding: 20px;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.desc a {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.desc h2 {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.desc p {
+    letter-spacing: 0.1em;
+    text-align: justify;
+
+}
+
+.container-elenco {
+    position: relative;
+    width: 100%;
+}
+
+.carousel-elenco {
+    margin-top: 15px;
+    width: 100%;
+    position: absolute;
+}
+
+.carousel-elenco .item {
+    text-align: center;
+    font-size: 14px;
+}
+
+@media screen and (max-width:700px) {
+    .poster {
+        min-width: 150px;
+        margin-right: 10px;
+    }
+
+    .poster img {
+        padding: 2px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    main .container {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .poster {
+        width: 100%;
+        display: flex;
+        margin-right: 20px;
+    }
+
+    .poster img {
+        display: flex;
+        padding-left: 25%;
+        padding-right: 25%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .desc {
+        flex-direction: column;
+    }
+
+    .desc h2 {
+        text-align: center;
+    }
+}

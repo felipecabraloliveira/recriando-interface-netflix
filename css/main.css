@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --cred: #E50914;
+    --cblack: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/** Elemnetos Base **/
+body {
+    background: var(--cblack);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.container {
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+}
+
+/** Header **/
+header .container {
+    width: 100%;
+    height: 60px;
+    background-color: rgba(14, 14, 14, 0.062);
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: .5s ease all;
+}
+
+.transp.scrolled {
+    background-color: var(--cblack);
+    z-index: 90;
+}
+
+header a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header .logo-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+
+/** Tratando o logo **/
+header .logo {
+    margin-left: 5px;
+    color: var(--cred);
+    font-family: 'Arial Black', Times;
+    font-size: 28px;
+}
+
+/** Menu **/
+header nav a {
+    font-family: 'Roboto', 'Regular', serif;
+    text-decoration: none;
+    color: #E5E5E5;
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/** Menu Search, Notificação e Perfil **/
+header .menu-perfil {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .menu-perfil i {
+    cursor: pointer;
+    font-size: 22px;
+    margin-right: 20px;
+}
+
+header .menu-perfil a {
+    border: solid #c0c0c0 0.5px;
+    cursor: pointer;
+    display: flex;
+    width: 40px;
+    height: 40px;
+}
+
+header .menu-perfil a:hover {
+    border: solid #fff .5px;
+    cursor: pointer;
+    display: flex;
+    width: 40px;
+    height: 40px;
+}
+
+/* Main */
+/*Filme em Destaque*/
+.filme-destaque {
+    font-size: 20px;
+    height: 95vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-destaque .container {
+    width: 50%;
+}
+
+/* Trailer */
+.bg-trailer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 90%;
+    width: 100%;
+    background-size: cover;
+    z-index: -5;
+    background: black center;
+    /* background: linear-gradient(rgba(0, 0, 0, .80), rgba(220, 0, 0, .10)), url('../img/capa-braking-bad.jpg');*/
+}
+
+.filme-destaque .titulo {
+    margin-top: 10%;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-size: 60px;
+}
+
+.filme-destaque .descricao {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.filme-destaque .botao {
+    font-family: 'Roboto', 'Regular', sans-serif;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    margin-right: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botoes a {
+    text-decoration: none;
+}
+
+/* Botões Assistir e Mais informações */
+.play {
+    background-color: white;
+    color: black;
+}
+
+/* Altera cor do botão ao passar o mouse */
+.play:hover {
+    background-color: rgba(255, 255, 255, .7);
+    color: black;
+}
+
+.inf {
+    background-color: rgba(10, 10, 10, .8);
+    color: white;
+
+}
+
+/* Altera cor do botão ao passar o mouse */
+.inf:hover {
+    background-color: rgba(20, 20, 20, .4);
+}
+
+.filme-destaque .botao i {
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+/* Altera o som do trailer para mudo */
+.volume {
+    position: absolute;
+    padding: 10px;
+    right: 20px;
+    bottom: 25%;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, .1);
+    color: white;
+}
+
+/* Botão volume mute */
+.fa-solid.fa-volume-xmark {
+    display: none;
+}
+
+/* Filmes em Carousel */
+.carousel-f h4 {
+    cursor: pointer;
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding-bottom: 8px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.top10 {
+    padding-top: 40px;
+}
+
+.series {
+    padding-top: 40px;
+}
+
+.animes {
+    padding-top: 40px;
+    margin-bottom: 40px;
+}
+
+.continuar {
+    padding-top: 40px;
+}
+
+.box-filme {
+    cursor: pointer;
+    padding: 5px;
+    display: block;
+}
+
+.box-filme:hover {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    transition: width 2s, height 2s;
+}
+
+footer {
+    font-family: 'Roboto', 'Arial', serif;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    background-color: #201f1f;
+}

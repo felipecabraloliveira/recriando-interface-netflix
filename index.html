@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <title>NETFLIX CLONE</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- OWL CSS -->
+    <link rel="stylesheet" href="css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl/owl.theme.default.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container transp">
+            <div class="logo-menu">
+                <a href="">
+                    <h2 class="logo">TOPFLIX</h2>
+                </a>
+                <nav>
+                    <a href="index.html">Início</a>
+                    <a href="#series">Séries</a>
+                    <a href="#filmes">Filmes</a>
+                    <a href="#top10">Bombando</a>
+                    <a href="#">Minha Lista</a>
+                </nav>
+            </div>
+            <div class="menu-perfil">
+                <i id="search" class="fa-solid fa-magnifying-glass"></i>
+                <i id="bell" class="fa-solid fa-bell"></i>
+                <a href="perfil.html">
+                    <img src="img/perf-01.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="filme-destaque">
+            <div class="container">
+                <video id="trailer" poster="img/capa.jpg" loop class="bg-trailer">
+                    <source src="vid/trailer.mp4" type="video/mp4">
+                </video>
+                <h3 class="titulo">BREAKING BAD</h3>
+                <p class="descricao">Ao saber que tem câncer, um professor passa a fabricar metanfetamina pelo futuro da
+                    família, mudando o destino de todos.</p>
+                <div class="botoes">
+                    <button role="button" class="botao play" onclick="video()">
+                        <i class="fa-solid fa-play"></i>
+                        Assistir
+                    </button>
+                    <a href="info.html">
+                        <button role="button" class="botao inf">
+                            <i class="fa-solid fa-circle-info"></i>
+                            Mais Informações
+                        </button>
+                    </a>
+                    <button role="button" class="volume">
+                        <i class="fa-solid fa-volume-high" onclick="mute()"></i>
+                        <i class="fa-solid fa-volume-xmark" onclick="som()"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel Filmes em Destaque -->
+        <div class="container">
+            <div id="filmes" class="carousel-f">
+                <h4>Filmes em destaque</h4>
+                <div class="owl-carousel destaque owl-theme">
+                    <div class="item">
+                        <img class="box-filme" src="img/melhor-01.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/melhor-02.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/melhor-03.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/melhor-04.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/melhor-05.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/melhor-06.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/melhor-07.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/melhor-08.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/melhor-09.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/melhor-10.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/melhor-11.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/melhor-12.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container top10">
+            <div class="carousel-f">
+                <h4>Continuar assistindo</h4>
+                <div class="owl-carousel top owl-theme">
+                    <div class="item">
+                        <img class="box-filme" src="img/continuar-01.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/continuar-02.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top  10-->
+        <div id="top10" class="container top10">
+            <div class="carousel-f">
+                <h4>Top 10 Lançamentos</h4>
+                <div class="owl-carousel top owl-theme">
+                    <div class="item">
+                        <img class="box-filme" src="img/top-01.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/top-02.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/top-03.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/top-04.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/top-05.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/top-06.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/top-07.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/top-08.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/top-09.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/top-10.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container series">
+            <div id="series" class="carousel-f">
+                <h4>Séries</h4>
+                <div class="owl-carousel destaque owl-theme">
+                    <div class="item">
+                        <img class="box-filme" src="img/serie-01.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/serie-02.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/serie-03.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/serie-04.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/serie-05.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/serie-06.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/serie-07.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/serie-08.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/serie-09.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/serie-10.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/serie-11.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/serie-12.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/serie-13.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/serie-14.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/serie-15.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container animes">
+            <div class="carousel-f">
+                <h4>Animes</h4>
+                <div class="owl-carousel destaque owl-theme">
+                    <div class="item">
+                        <img class="box-filme" src="img/anime-01.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/anime-02.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/anime-03.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/anime-04.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/anime-05.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/anime-06.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/anime-07.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/anime-08.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img class="box-filme" src="img/anime-09.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Desenvolvido por Felipe Cabral<br />
+        Bootcamp Carrefour Web Developer - DIO
+    </footer>
+    <script src="https://kit.fontawesome.com/08cfcfafd0.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

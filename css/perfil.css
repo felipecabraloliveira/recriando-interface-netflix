@@ -1,0 +1,97 @@
+body {
+    font-family: 'Roboto', 'Arial', serif;
+}
+
+.selecao-perfil {
+    width: 100%;
+    font-size: 20px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.perfil {
+    width: 100%;
+    height: 100%;
+}
+
+.perfil h2 {
+    margin-top: 3%;
+    font-size: 40px;
+    text-align: center;
+}
+
+.perf {
+    margin-top: 40px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.item {
+    cursor: pointer;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: white
+}
+
+.user {
+    border-radius: 5px;
+}
+
+.user:hover {
+    border: solid white 4px;
+    background-color: white;
+}
+
+.btn-perfil {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-perfil button {
+    margin-top: 40px;
+    background-color: transparent;
+    border: #c0c0c0 solid 2px;
+    color: #c0c0c0;
+    font-size: 16px;
+    padding: 10px 20px;
+    letter-spacing: .2rem;
+}
+
+.btn-perfil button:hover {
+    border: solid 4px white;
+}
+
+@media (max-width: 600px) {
+    header .container {
+        position: absolute;
+    }
+
+    .perfil h2 {
+        font-size: 35px;
+    }
+
+    .selecao-perfil {
+        position: absolute;
+    }
+
+    .btn-perfil button {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        ;
+    }
+}
+
+@media (max-width: 380px) {
+    .perfil h2 {
+        font-size: 30px;
+    }
+
+}

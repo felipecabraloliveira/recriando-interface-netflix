@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <title>NETFLIX CLONE - Perfil</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/perfil.css">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <!-- OWL CSS -->
+    <link rel="stylesheet" href="css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl/owl.theme.default.min.css">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <div class="container transp">
+                <h2 class="logo">TOPFLIX</h2>
+            </div>
+        </a>
+    </header>
+    <main>
+        <div class="selecao-perfil">
+            <div class="perfil" style="margin-top: 80px">
+                <h2>Quem está assistindo?</h2>
+                <div class="owl-carousel perf owl-theme">
+                    <div class="item">
+                        <a href="index.html" target="">
+                            <img class="user" src="img/perf-01.jpg" alt="">
+                            Fred
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="index.html" target="">
+                            <img class="user" src="img/perf-02.jpg" alt="">
+                            Tânia
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="index.html" target="">
+                            <img class="user" src="img/perf-03.jpg" alt="">
+                            Fabiana
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="index.html" target="">
+                            <img class="user" src="img/perf-04.jpg" alt="">
+                            Adriano
+                        </a>
+                    </div>
+                    <div class="item">
+                        <img class="user" src="img/perf-06.png" alt="">
+                        Adicionar perfil
+                    </div>
+                </div>
+            </div>
+            <div class="btn-perfil">
+                <button role="button">
+                    Gerenciar Perfis
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://kit.fontawesome.com/08cfcfafd0.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script>
+        $('.perf').owlCarousel({
+            loop: false,
+            margin: 30,
+            dots: true,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                600: {
+                    items: 3
+                },
+                900: {
+                    items: 5
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>

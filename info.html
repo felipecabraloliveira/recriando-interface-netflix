@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <title>NETFLIX CLONE - Informações</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/info.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- OWL CSS -->
+    <link rel="stylesheet" href="css/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl/owl.theme.default.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container transp">
+            <div class="logo-menu">
+                <a href="index.html">
+                    <h2 class="logo">TOPFLIX</h2>
+                </a>
+                <nav>
+                    <a href="index.html">Início</a>
+                    <a href="#series">Séries</a>
+                    <a href="#filmes">Filmes</a>
+                    <a href="#top10">Bombando</a>
+                    <a href="#">Minha Lista</a>
+                </nav>
+            </div>
+            <div class="menu-perfil">
+                <i id="search" class="fa-solid fa-magnifying-glass"></i>
+                <i id="bell" class="fa-solid fa-bell"></i>
+                <a href="perfil.html">
+                    <img src="img/perf-01.jpg" alt="">
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="poster">
+                <img src="img/info.jpg" alt="">
+            </div>
+            <div class="desc">
+                <a href="index.html">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                </a>
+                <h2>SINOPSE & INFO</h2>
+                <p>
+                    Walter White (Bryan Cranston) é um professor de química na casa dos 50 anos que trabalha em uma
+                    escola secundária no Novo México. Para atender às necessidades de Skyler (Anna Gunn), sua esposa
+                    grávida, e Walt Junior (RJ Mitte), seu filho deficiente físico, ele tem que trabalhar duplamente.
+                    Sua vida fica ainda mais complicada quando descobre que está sofrendo de um câncer de pulmão
+                    incurável. Para aumentar rapidamente a quantidade de dinheiro que deixaria para sua família após sua
+                    morte, Walter usa seu conhecimento de química para fazer e vender metanfetamina, uma droga
+                    sintética. Ele conta com a ajuda do ex-aluno e pequeno traficante Jesse (Aaron Paul) e enfrenta
+                    vários desafios, incluindo o fato de seu concunhado ser um importante nome dentro da Agência
+                    Anti-Drogas da região.
+                </p>
+                <div class="container-elenco">
+                    <div class="carousel-elenco">
+                        <h3>Elenco</h3>
+                        <div class="owl-carousel elenco owl-theme">
+                            <div class="item">
+                                <img class="box-filme" src="img/personagem-01.jpg" alt="">
+                                Bryan Cranston<br />
+                                <span style="color: #c0c0c0">Walter White</span>
+                            </div>
+                            <div class="item">
+                                <img class="box-filme" src="img/personagem-02.jpg" alt="">
+                                Aaron Paul<br />
+                                <span style="color: #c0c0c0">Jesse Pinkman</span>
+                            </div>
+                            <div class="item">
+                                <img class="box-filme" src="img/personagem-03.jpg" alt="">
+                                Anna Gunn<br />
+                                <span style="color: #c0c0c0">Skyler White</span>
+                            </div>
+                            <div class="item">
+                                <img class="box-filme" src="img/personagem-04.jpg" alt="">
+                                Dean Norris<br />
+                                <span style="color: #c0c0c0">Hank Schrader </span>
+                            </div>
+                            <div class="item">
+                                <img class="box-filme" src="img/personagem-05.jpg" alt="">
+                                Betsy Brandt<br />
+                                <span style="color: #c0c0c0">Marie Schrader </span>
+                            </div>
+                            <div class="item">
+                                <img class="box-filme" src="img/personagem-06.jpg" alt="">
+                                RJ Mitte<br />
+                                <span style="color: #c0c0c0">Walter White Jr </span>
+                            </div>
+                            <div class="item">
+                                <img class="box-filme" src="img/personagem-07.jpg" alt="">
+                                Bob Odenkirk<br />
+                                <span style="color: #c0c0c0">Saul Goodman </span>
+                            </div>
+                            <div class="item">
+                                <img class="box-filme" src="img/personagem-08.jpg" alt="">
+                                Jonathan Banks<br />
+                                <span style="color: #c0c0c0">Mike </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://kit.fontawesome.com/08cfcfafd0.js" crossorigin="anonymous"></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $('.elenco').owlCarousel({
+            loop: false,
+            margin: 15,
+            dots: true,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                500: {
+                    items: 3
+                },
+                600: {
+                    items: 4
+                },
+                1000: {
+                    items: 6
+                }
+            }
+        })
+    </script>
+</body>
+
+</html>
