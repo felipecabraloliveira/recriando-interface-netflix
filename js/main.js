@@ -51,8 +51,23 @@ function som() {
     $('.fa-solid.fa-volume-xmark').hide();
 }
 function video() {
+    $('.filme-destaque .titulo').hide();
+    $('.filme-destaque .descricao').hide();
+    $('.botao.play').hide();
+    $('.botao.inf').hide();
+    $('#control-video').show();
+
+
     vid.play();
     vid.volume = 0.5;
+}
+function videoPause() {
+    $('.filme-destaque .titulo').show();
+    $('.filme-destaque .descricao').show();
+    $('.botao.play').show();
+    $('.botao.inf').show();
+    $('#control-video').hide();
+    vid.pause();
 }
 $(window).scroll(function () {
     vid.play();

@@ -19,6 +19,14 @@ Tecnologias e ferramentas utilizadas:
 
 
 
+**GitHub Pages**
+
+Confira como ficou o projeto:
+
+Link: https://felipecabraloliveira.github.io/recriando-interface-netflix
+
+
+
 ### Páginas
 
 
